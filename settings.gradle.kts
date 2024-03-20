@@ -3,5 +3,9 @@
  *
  * This project uses @Incubating APIs which are subject to change.
  */
-
+//Toolchains resolver using the Foojay Disco API for resolving Java runtimes.
+// Automatically configures toolchain management.
+plugins {
+    id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
+}
 rootProject.name = "base-starter-flow-quarkus"

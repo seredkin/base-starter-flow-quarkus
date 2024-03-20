@@ -7,7 +7,7 @@
 plugins {
     id("java")
     id("com.vaadin") version "24.3.7"
-    id("io.quarkus") version "3.1.1.Final"
+    id("io.quarkus") version "3.2.11.Final"
 }
 
 repositories {
@@ -22,20 +22,14 @@ repositories {
 }
 
 dependencies {
-    implementation(enforcedPlatform("io.quarkus.platform:quarkus-bom:3.1.1.Final"))
+    implementation(enforcedPlatform("io.quarkus.platform:quarkus-bom:3.2.11.Final"))
     implementation(enforcedPlatform("com.vaadin:vaadin-bom:24.3.7"))
     implementation("com.vaadin:vaadin-quarkus-extension:24.3.7")
-
-//    implementation("io.quarkus:quarkus-arc")
-//    implementation("io.quarkus:quarkus-resteasy-reactive")
-//    implementation("io.quarkus:quarkus-resteasy-reactive-jackson")
-
 }
 
 group = "org.acme"
 version = "1.0-SNAPSHOT"
 description = "base-starter-flow-quarkus"
-//java.sourceCompatibility = JavaVersion.VERSION_1_8
 
 
 
